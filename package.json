@@ -1,0 +1,39 @@
+{
+  "name": "playful-code",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PlayfulCode - 零运行时依赖的代码助手：会读代码、会跑代码、会给结论（Agent 循环 + 工具调用 + 静态分析 + 上下文记忆）",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "playfulcode": "bin/playfulcode.js"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-public.mjs",
+    "start": "node dist/main.js",
+    "web": "node dist/main.js web",
+    "chat": "node dist/main.js chat",
+    "scan": "node dist/main.js scan",
+    "demo": "node dist/main.js review src/demo --demo",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "agent",
+    "llm",
+    "code-review",
+    "tool-calling",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
