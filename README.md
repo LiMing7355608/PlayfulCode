@@ -2,6 +2,8 @@
 
 一个能自己读代码、自己跑代码、最后给你结论的**代码助手**。零运行时依赖。
 
+> 项目演示地址：【PlayfulCode演示】 https://www.bilibili.com/video/BV1Mjn66jEDg
+
 ```bash
 npm install && npm run build
 
